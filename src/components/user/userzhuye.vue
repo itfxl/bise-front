@@ -70,7 +70,7 @@ export default {
     housesall() {
       this.axios({
         method: "post",
-        url: "http://localhost:9376/houseselect",
+        url: "http://82.157.247.91:9376/houseselect",
         data: {},
       }).then((response) => {
         this.houses = response.data.house;

@@ -41,7 +41,7 @@ export default {
       this.listall = [];
       this.axios({
         method: "post",
-        url: "http://localhost:9376/houseselect",
+        url: "http://82.157.247.91:9376/houseselect",
         data: {},
       }).then((response) => {
         console.log(response.data.house);
@@ -55,7 +55,7 @@ export default {
     addorder(id) {
       this.axios({
         method: "post",
-        url: "http://localhost:9376/addorder",
+        url: "http://82.157.247.91:9376/addorder",
         data: {
           hid: id,
           account: this.user.account,

@@ -59,7 +59,7 @@
         <el-form-item>
           <el-upload
             class="upload-demo"
-            action="http://localhost:9376/addhouse"
+            action="http://82.157.247.91:9376/addhouse"
             ref="addhouse"
             name="imgurl"
             :data="house"

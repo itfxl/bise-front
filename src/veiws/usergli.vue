@@ -89,7 +89,7 @@ export default {
     listhouse(){
       this.axios({
         method: "post",
-        url: "http://localhost:9376/userselect",
+        url: "http://82.157.247.91:9376/userselect",
         data:{},
       }).then((response) => {
         this.listall = response.data.users;
@@ -112,7 +112,7 @@ export default {
     del(id) {
       this.axios({
         method: "post",
-        url: "http://localhost:9376/deluser",
+        url: "http://82.157.247.91:9376/deluser",
         data:{
           hid: id
         },
@@ -131,7 +131,7 @@ export default {
     listAll() {
       this.axios({
         method: "post",
-        url: "http://localhost:9376/userselect",
+        url: "http://82.157.247.91:9376/userselect",
         data:{
         },
       }).then((response) => {
@@ -162,7 +162,7 @@ export default {
     handleSelect() {
       this.axios({
         method: "post",
-        url: "http://localhost:9376/userselect",
+        url: "http://82.157.247.91:9376/userselect",
         data:{
           account: this.state
         },

@@ -63,7 +63,7 @@ export default {
     listhouse() {
       this.axios({
         method: "post",
-        url: "http://localhost:9376/orderselect",
+        url: "http://82.157.247.91:9376/orderselect",
         data: {},
       }).then((response) => {
         this.listall = response.data.orders;
@@ -73,7 +73,7 @@ export default {
     delorder(id,account) {
       this.axios({
         method: "post",
-        url: "http://localhost:9376/delorder",
+        url: "http://82.157.247.91:9376/delorder",
         data: {
           hid: id,
           account: account,
@@ -94,7 +94,7 @@ export default {
     listAll() {
       this.axios({
         method: "post",
-        url: "http://localhost:9376/orderselect",
+        url: "http://82.157.247.91:9376/orderselect",
         data: {},
       }).then((response) => {
         for (var i = 0; i < response.data.orders.length; i++) {
@@ -127,7 +127,7 @@ export default {
     handleSelect() {
       this.axios({
         method: "post",
-        url: "http://localhost:9376/orderselect",
+        url: "http://82.157.247.91:9376/orderselect",
         data: {
           account: this.state,
         },

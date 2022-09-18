@@ -6,18 +6,18 @@
       </div>
       <div class="indexzhong">
         <div class="touxiang">
-          <img src="http://localhost:9376/image/touxiang.jpg" class="touxiangmr" />
+          <img src="http://82.157.247.91:9376/image/touxiang.jpg" class="touxiangmr" />
         </div>
         <div class="from">
           <div class="zhanghao">
-            <img src="http://localhost:9376/image/yonghu.png" />
+            <img src="http://82.157.247.91:9376/image/yonghu.png" />
             <el-input
               v-model="userData.account"
               placeholder="请输入账号"
             ></el-input>
           </div>
           <div class="mima">
-            <img src="http://localhost:9376/image/mima.png" />
+            <img src="http://82.157.247.91:9376/image/mima.png" />
             <el-input
               placeholder="请输入密码"
               v-model="userData.password"
@@ -81,7 +81,7 @@ export default {
     login() {
       this.axios({
         method: "post",
-        url: "http://localhost:9376/adminlogin",
+        url: "http://82.157.247.91:9376/adminlogin",
         data: {
           account: this.userData.account,
           password: this.userData.password,
@@ -101,7 +101,7 @@ export default {
     userlogin(){
       this.axios({
         method: "post",
-        url: "http://localhost:9376/userlogin",
+        url: "http://82.157.247.91:9376/userlogin",
         data: {
           account: this.userData.account,
           password: this.userData.password,
@@ -122,7 +122,7 @@ export default {
     xiugai(){
       this.axios({
         method: "post",
-        url: "http://localhost:9376/zhucexiugai",
+        url: "http://82.157.247.91:9376/zhucexiugai",
         data: {
           account: this.userData.account,
           password: this.userData.password,

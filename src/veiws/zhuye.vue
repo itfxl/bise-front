@@ -54,7 +54,7 @@
           <el-form-item>
             <el-upload
               class="upload-demo"
-              action="http://localhost:9376/updatehouse"
+              action="http://82.157.247.91:9376/updatehouse"
               ref="uphouse"
               name="imgurl"
               :data="house"
@@ -124,7 +124,7 @@ export default {
     listhouse() {
       this.axios({
         method: "post",
-        url: "http://localhost:9376/houseselect",
+        url: "http://82.157.247.91:9376/houseselect",
         data: {},
       }).then((response) => {
         this.listall = response.data.house;
@@ -149,7 +149,7 @@ export default {
     del(id) {
       this.axios({
         method: "post",
-        url: "http://localhost:9376/delhouse",
+        url: "http://82.157.247.91:9376/delhouse",
         data: {
           hid: id,
         },
@@ -168,7 +168,7 @@ export default {
     listAll() {
       this.axios({
         method: "post",
-        url: "http://localhost:9376/houseselect",
+        url: "http://82.157.247.91:9376/houseselect",
         data: {},
       }).then((response) => {
         for (var i = 0; i < response.data.house.length; i++) {
@@ -200,7 +200,7 @@ export default {
     handleSelect() {
       this.axios({
         method: "post",
-        url: "http://localhost:9376/houseselect",
+        url: "http://82.157.247.91:9376/houseselect",
         data: {
           address: this.state,
         },

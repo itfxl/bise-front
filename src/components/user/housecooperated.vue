@@ -36,7 +36,7 @@ export default {
     listalla() {
       this.axios({
         method: "post",
-        url: "http://localhost:9376/selecthousecated",
+        url: "http://82.157.247.91:9376/selecthousecated",
         data: {},
       }).then((response) => {
         this.listall = response.data.housecateds;

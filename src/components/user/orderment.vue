@@ -58,7 +58,7 @@ export default {
       this.listall =[];
       this.axios({
         method: "post",
-        url: "http://localhost:9376/orderselect",
+        url: "http://82.157.247.91:9376/orderselect",
         data: {
           account: this.user.account,
         },
@@ -75,7 +75,7 @@ export default {
     delorder(hid) {
       this.axios({
         method: "post",
-        url: "http://localhost:9376/delorder",
+        url: "http://82.157.247.91:9376/delorder",
         data: {
           hid: hid,
           account: this.user.account,
@@ -100,7 +100,7 @@ export default {
     uporder(){
       this.axios({
         method: "post",
-        url: "http://localhost:9376/uporder",
+        url: "http://82.157.247.91:9376/uporder",
         data: {
           id: this.hid,
           account: this.user.account,

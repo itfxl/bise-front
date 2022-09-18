@@ -6,7 +6,7 @@
           <el-form-item>
             <el-upload
               class="upload-demo"
-              action="http://localhost:9376/upshow"
+              action="http://82.157.247.91:9376/upshow"
               ref="upshow"
               name="imgurl"
               :on-success="success"

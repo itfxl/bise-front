@@ -58,7 +58,7 @@
         <el-form-item>
           <el-upload
             class="upload-demo"
-            action="http://localhost:9376/addhouse"
+            action="http://82.157.247.91:9376/addhouse"
             ref="addhouse"
             name="imgurl"
             :data="house"
@@ -122,7 +122,7 @@
         <el-form-item>
           <el-upload
             class="upload-demo"
-            action="http://localhost:9376/updatehouse"
+            action="http://82.157.247.91:9376/updatehouse"
             ref="uphouse"
             name="imgurl"
             :data="house"
@@ -193,7 +193,7 @@ export default {
       console.log(this.user);
       this.axios({
         method: "post",
-        url: "http://localhost:9376/houseselect",
+        url: "http://82.157.247.91:9376/houseselect",
         data: {
           account: this.user.account,
         },
@@ -239,7 +239,7 @@ export default {
     del(id) {
       this.axios({
         method: "post",
-        url: "http://localhost:9376/delhouse",
+        url: "http://82.157.247.91:9376/delhouse",
         data: {
           hid: id,
         },

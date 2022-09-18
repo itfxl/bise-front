@@ -64,7 +64,7 @@ export default {
     listhouse(){
       this.axios({
         method: "post",
-        url: "http://localhost:9376/selecthousecated",
+        url: "http://82.157.247.91:9376/selecthousecated",
         data:{},
       }).then((response) => {
         this.listall = response.data.housecateds;
@@ -74,7 +74,7 @@ export default {
     del(id) {
       this.axios({
         method: "post",
-        url: "http://localhost:9376/delhousecated",
+        url: "http://82.157.247.91:9376/delhousecated",
         data:{
           id: id
         },
@@ -93,7 +93,7 @@ export default {
     listAll() {
       this.axios({
         method: "post",
-        url: "http://localhost:9376/selecthousecated",
+        url: "http://82.157.247.91:9376/selecthousecated",
         data:{
         },
       }).then((response) => {
@@ -124,7 +124,7 @@ export default {
     handleSelect() {
       this.axios({
         method: "post",
-        url: "http://localhost:9376/selecthousecated",
+        url: "http://82.157.247.91:9376/selecthousecated",
         data:{
           account: this.state
         },

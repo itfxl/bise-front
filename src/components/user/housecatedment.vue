@@ -83,7 +83,7 @@ export default {
       this.listall = [];
       this.axios({
         method: "post",
-        url: "http://localhost:9376/selecthousecated",
+        url: "http://82.157.247.91:9376/selecthousecated",
         data: {},
       }).then((response) => {
         for (let index = 0; index < response.data.housecateds.length; index++) {
@@ -96,7 +96,7 @@ export default {
     addhousecated() {
       this.axios({
         method: "post",
-        url: "http://localhost:9376/addhousecated",
+        url: "http://82.157.247.91:9376/addhousecated",
         data: {
           account: this.user.account,
           address: this.housecateds.address,
@@ -120,7 +120,7 @@ export default {
     delhousecated(id) {
       this.axios({
         method: "post",
-        url: "http://localhost:9376/delhousecated",
+        url: "http://82.157.247.91:9376/delhousecated",
         data: {
           id: id,
         },
